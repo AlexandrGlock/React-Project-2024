@@ -1,0 +1,67 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header {
+  animation: fadeIn 1s forwards;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  animation: fadeIn 1s forwards;
+}
+.logo-img{
+  height: 30px; 
+  margin-right: 10px;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  font-size: 1rem;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #ff5500;
+  transform: scale(1.1);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
